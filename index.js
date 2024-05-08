@@ -37,7 +37,7 @@ app.put('/todos/:id',(req,res)=>{
     const urlid=req.params.id;
 
     const updatedata=todolist.findIndex((td)=>{
-        td.id==urlid 
+        td.id===urlid 
     })
 
     if(urlid!==-1)
@@ -53,10 +53,10 @@ app.put('/todos/:id',(req,res)=>{
    })     
 })
 
-app.delete('todos/:id' , (req,res)=>{
+app.delete('/todos/:id' , (req,res)=>{
     const todoparamid=req.params.id;
 
-    const todoindex=todolist.findIndex(td=>td.id==req.params.id);
+    const todoindex=todolist.findIndex(td=>td.id===req.params.id);
 
     if(todoindex!==-1)
         {
