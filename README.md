@@ -5,10 +5,10 @@ This project demonstrates the implementation of a stateless RESTful API for a to
 This API provides basic functionality for managing to-do items. It includes endpoints for creating, retrieving, updating, and deleting to-do items.
 
 ### Endpoints:
-1. GET /todos: Retrieves a list of to-do items.
-2. POST /todos: Creates a new to-do item.
-3. PUT /todos/:id: Updates an existing to-do item.
-4. DELETE /todos/:id: Deletes a to-do item by its ID.
+1. ***GET /todos:*** Retrieves a list of to-do items.
+2. ***POST /todos:*** Creates a new to-do item.
+3. ***PUT /todos/:id:*** Updates an existing to-do item.
+4. ***DELETE /todos/:id:*** Deletes a to-do item by its ID.
    
 ## How Server Maintains No Client Session State
 In this API, the server doesn't maintain any state about client sessions. Each request from the client to the server contains all the information needed for the server to understand and process the request. Here's how the statelessness is demonstrated in the context of this to-do list application:
